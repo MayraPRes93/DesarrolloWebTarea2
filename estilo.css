@@ -1,0 +1,279 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(242, 178, 172);
+    margin: 0;
+    padding: 0;
+}
+
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(233, 233, 217);
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.titulo-logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.titulo-logo img {
+    width: 80px; 
+    height: auto; 
+  }
+
+.buscador-sesion {
+    display: flex;
+    align-items: center;
+}
+
+.buscador-sesion a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.buscador-sesion input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.buscador-sesion button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.menu-botones {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+
+.menu-botones button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #d1d1e0;
+    color: black;
+    cursor: pointer;
+}
+
+.contenido {
+    margin-top: 180px;
+    padding: 20px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .barra-superior {
+      flex-direction: column; /* Apila los elementos */
+    }
+    .titulo-logo {
+      flex-direction: column; /* Apila el título y el logo */
+      align-items: center; /* Centra los elementos */
+    }
+    .buscador-sesion input[type="text"] {
+      width: 100%; /* Ajusta el ancho para pantallas pequeñas */
+    }
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.columna {
+    width: 48%;
+}
+
+.columna p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.barra-inferior {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    text-align: center; 
+  }
+
+  .iconos-redes {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .icono-red {
+    width: 30px; 
+    margin: 0 10px; 
+  }
+
+  .barra-inferior {
+    background-color: #efe3d0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .iconos-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-social {
+    display: flex;
+    align-items: center;
+    margin: 0 15px; 
+  }
+  
+  .icono-red {
+    width: 30px;
+    margin-right: 5px; 
+  }
+
+.titulo-principal {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}  
+
+/*Contenido Registro */
+
+header {
+    background-color: #d414e9;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0c0c0c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0f0f0e;
+    font-size: 24px;
+}
+
+h3 {
+    color: #761807;
+    font-size: 24px;
+}
+
+.contenido-registro {
+    background-color: #c8e8ea;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contenido Menu */
+
+.menu-container {
+  width: 80%;
+  margin: 150px auto 20px auto;
+  font-family: sans-serif;
+}
+
+.opciones-menu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.categoria {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.resumen-pedido {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+}
+
+.titulo-menu {
+  margin-top: 100px; 
+}
+
+.definiciones-1 {
+  padding-top: 100px; 
+}
+
+/* Menu especial */
+
+.barra-lateral {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.barra-lateral button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#entradas, #fuertes, #postres, #bebidas {
+  margin-left: 220px; 
+}
+
+.barra-lateral {
+  
+  padding-top: 200px;
+}
+
+.barra-lateral button {
+  background-color: rgb(128, 0, 26);
+  color: white;
+  border-color: darkgreen;
+}
+
+
+
+
+
+  
+
+
